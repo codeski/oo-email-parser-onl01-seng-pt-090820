@@ -8,10 +8,15 @@ class EmailAddressParser
 
 attr_accessor :parse
 
-def parse(emails)
-  new = emails.split("," || " ")
-  binding.pry
-  new
+def initialize(emails)
+  @parse = emails.split("," || " ")
+  @parse
 end
+
+# def parse(emails)
+#   new = emails.split("," || " ")
+#   binding.pry
+#   new
+# end
 
 end
