@@ -11,6 +11,7 @@ attr_accessor :parse
 def parse (emails)
   new = emails.split(", " || " ")
   binding.pry
+  new
 end
 
 end
