@@ -9,7 +9,8 @@ class EmailAddressParser
 attr_accessor :parse
 
 def parse (emails)
-  emails.split(", " || " ")
+  new = emails.split(", " || " ")
+  array << new
   binding.pry
 end
 
