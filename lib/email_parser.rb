@@ -10,13 +10,6 @@ attr_accessor :parse
 
 def initialize(emails)
   @parse = emails.split(/\,|\ /).reject(&:empty?).uniq
-  # @parse.uniq
 end
-
-# def parse(emails)
-#   new = emails.split("," || " ")
-#   binding.pry
-#   new
-# end
 
 end
